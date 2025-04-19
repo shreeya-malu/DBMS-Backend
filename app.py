@@ -1,15 +1,16 @@
-from flask import Flask, render_template
-from flask_sqlalchemy import SQLAlchemy
+import os
+from flask import Flask
+from flask_mysqldb import MySQL
 
-# Initialize Flask app and SQLAlchemy
 app = Flask(__name__)
 
-# Database Configuration
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:admin123@localhost/campus_portal'  # Update with your details
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+app.config['MYSQL_HOST'] = os.environ.get("DB_HOST")
+app.config['MYSQL_USER'] = os.environ.get("DB_USER")
+app.config['MYSQL_PASSWORD'] = os.environ.get("DB_PASSWORD")
+app.config['MYSQL_DB'] = os.environ.get("DB_NAME")
 
-# Initialize SQLAlchemy
-db = SQLAlchemy(app)
+mysql = MySQL(app)
+
 
 # Define the model for carousel items
 class CarouselItem(db.Model):
