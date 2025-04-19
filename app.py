@@ -9,7 +9,7 @@ app.config['MYSQL_USER'] = os.environ.get("DB_USER")
 app.config['MYSQL_PASSWORD'] = os.environ.get("DB_PASSWORD")
 app.config['MYSQL_DB'] = os.environ.get("DB_NAME")
 
-mysql = MySQL(app)
+db = MySQL(app)
 
 
 # Define the model for carousel items
