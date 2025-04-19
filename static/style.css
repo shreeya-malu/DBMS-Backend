@@ -1,0 +1,176 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+#navbar_w
+{
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navbar
+{
+    height: 50px;
+    font-size: 20px;
+    align-self: center;
+}
+
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+    list-style: none;
+}
+
+#navbar li{
+    padding: 10px;
+}
+
+#logo img
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+
+#map_container
+{
+    width: 300px;
+    height: 300px;
+    align-content: center;
+}
+
+#map 
+{
+    height: 500px;
+    width: 700px;
+}
+
+button
+{
+    font-size: 15px;
+    margin-right: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    height: 30px;
+    width: 80px;
+}
+
+#hero-section
+{
+    display: flex;
+    justify-content: space-between;
+    height: 500px;
+    margin-left: 50px;
+    margin-right: 70px;
+    margin-bottom: 20px;
+}
+
+#Heading
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+#Heading h1{
+    font-size: 70px;
+    font-weight: 600;
+    padding: 20px;
+}
+
+h2{
+    font-size: 30px;
+    font-weight: 500;
+    justify-self: center;
+    padding-top: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#page-buttons ul
+{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#section2
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#myCarousel
+{
+    max-width: 700px;
+    max-height: 800px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 70px;
+    border:solid black 3px;
+}
+
+.apply-button-container {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    text-align: center;
+  }
+
+  #apply button {
+    width: 100px;
+    font-size: 16px;
+    background-color: #337ab7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+  }
+
+  #apply button:hover {
+    background-color: #286090;
+  }
+
+  #Resource
+  {
+    margin-left: 80px;
+  }
+
+  #Resource h1{
+    font-size: 50px;
+    font-weight: 600;
+  }
+
+  #resource-tabs {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 10px;
+  }
+  #resource-tabs > div {
+    background-color: #f1f1f1;
+    border: 1px solid black;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    max-width: 300px;
+    height: 130px;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 8px;
+    padding-top: 50px;
+  }
